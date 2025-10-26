@@ -1,0 +1,214 @@
+/* Arthur J Mabee */
+/* ITC2400 - 19967 */
+/* Signature Assignment */
+
+/* Global Styles */
+
+h1 { 
+	font-size: 3em;
+}
+h2 { 
+	color: #8C3826;
+}
+h3 { 
+	color: #8C3826;
+}
+
+h4 {
+	background-color: #D2B48C;
+	font-size: 1em;
+	padding-left: .5em;
+	text-transform: uppercase;
+	border: 1px solid #000000;
+	padding-bottom: 0;
+	clear: left;
+}
+
+img {
+	padding-left: 10px;
+	padding-right: 10px; 
+}
+
+hr {
+	border: 2px solid #000000;
+}
+
+/* Header Section Styles */
+
+header {
+	background-color: #D2B48C;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-image: url(../images/logo.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-left: 240px;
+	color: #231814;
+}
+
+header a {
+	text-decoration: none;
+}
+
+header a:link, header a:visited {
+	color: #231814;
+}
+
+header a:hover {
+	color: #FEF6C2;
+}
+
+/* Navigation Section Styles */
+
+nav {
+	font-weight: bold; 
+	text-align: center;
+	font-size: 1em;
+	background-color: #BEC3C6;
+	border: 3px solid #8C3826;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+ul li a {
+	display: block;
+	color: #8C3826;
+	padding: 5px 35px;
+	text-decoration: none;
+}
+
+ul li a:hover {
+	background-color: #808080;
+}
+
+/* Body & Main Section Styles */
+
+body { 
+	background-color: #FCEBB6;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #221811;
+	font-family: Tahoma, Arial, sans-serif; 	   
+}
+
+main { 
+	display: block;
+	padding-bottom: 2em;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding-top: 0;
+	background-color: #FEF6C2;
+	overflow: auto;
+}
+
+main h2, main h3, main h4 {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+main p, main div, main ul, main dl {
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+main dt {
+	font-weight: bold;
+	text-decoration: underline;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Footer Section Styles */
+
+footer { 
+	background-color: #BEC3C6;
+	font-size: .60em;
+	font-style: normal;
+	text-align: center;
+	padding-bottom: 1em;
+	border: 3px solid #8C3826;
+}
+
+footer ul{
+	list-style: none;
+	text-align: left;
+	margin-left: 25%;
+}
+
+/* Classes */
+
+* {
+	box-sizing: border-box;
+}
+
+#wrapper-grid {
+	display: grid;
+	grid-template-rows: auto auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	box-shadow: 3px 3px 3px #676767;
+	background-color: #231814;
+	padding: 0;
+}
+
+#playmat { 
+	height: 345px;
+	width: 518px;
+	background-image: url(../images/playmat.jpg);
+	background-size: 100% 100%;
+	margin: auto;
+}
+
+#drafts { 
+	height: 345px;
+	width: 518px;
+	background-image: url(../images/draft_pour.jpg);
+	background-size: 100% 100%;
+	margin: auto;
+}
+
+#cardhand { 
+	height: 345px;
+	width: 518px;
+	background-image: url(../images/cardgrip.jpg);
+	background-size: 100% 100%;
+	margin: auto;
+}
+
+.row-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+	justify-content: space-around;
+	align-items: center;	
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.column {
+	margin: 10px;
+	padding: 20px;
+	width: 25%;
+	align-items: center;
+}
+
+.business-hours {
+	float: left;
+	width: 33%;
+}
+
+.store-info {
+	float: right;
+	width: 33%;
+}
