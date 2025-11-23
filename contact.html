@@ -5,7 +5,7 @@
 <html lang="en">
 
 <head>
-	<title>Draft & Drafts - Homepage</title>
+	<title>Draft & Drafts - Contact Us</title>
 	<meta charset="utf-8">
 	<link href="stylesheet/draftanddrafts.css" rel="stylesheet">
 </head>
@@ -28,28 +28,31 @@
 			</ul>
 		</nav>
 		<main>
-			<div class="row-container">
-				<div class="column" id="cardhand"></div>
-				<div class="column" id="drafts"></div>
-				<!-- Purpose of div element is for display and formatting of images displayed -->
-				<!-- If there is something I am missing or a format that is better please advise 
-				as to what tag set I should look towards as I would like to correct before final 
-				submission and losing points. -->
+			<h1 align="center">Contact Us</h1>
+			<div class="form-container">
+				<form action="#" method="post">
+					<label for="name">Contact Name: <span class="required-asterisk">*</span></label>
+						<input type="text" id="name" name="contactName" required minlength="3" maxlength="50" placeholder="Jace Beleren">
+					<label for="email">Contact Email: <span class="required-asterisk">*</span></label>
+						<input type="email" id="email" name="contactEmail" required placeholder="your.email@example.com">
+					<label for="phone">Contact Phone: (Optional)</label>
+						<input type="tel" id="phone" name="contactPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+					<label for="subject">Subject:</label>
+						<select id="subject" name="subject" required>
+							<option value="">-- Please choose an option --</option>
+							<option value="general">General Inquiry</option>
+							<option value="event">Event Inquiry</option>
+							<option value="partnership">Partnership Request</option>
+							<option value="support">Technical Support</option>
+							<option value="billing">Billing Question</option>
+							<option value="feedback">Feedback</option>
+						</select>
+					<label for="message">Enter Message:</label>
+						<textarea id="message" name="message" rows="5" required minlength="10" maxlength="500" placeholder="Type your message here..."></textarea>
+					<button type="submit">Submit Message</button>
+					<button type="reset">Reset Form</button>
+				</form>
 			</div>
-			<h2>Draft & Drafts - An adult twist on a Local Game Store.</h2>
-			<p>At Draft & Drafts we offer a casual and relaxed environment for an adult crowd looking to relax and unwind playing some cards while enjoying a beverage.</p>
-			<p>We are looking to bridge the gap between getting together with your friends at the kitchen table, restaurant, tavern/bar, along with your typical local game store (LGS). We do this by offering an establishment that is 21+, nothing against those under 21, we are just not the LGS for you. At Draft & Drafts you will find a gaming environment unlike that of your typicaly LGS. With adult beverages on-tap come on in with your friends and play group to test, hangout and compete.</p>
-			<h3>Draft & Drafts features:</h3>
-			<ul>
-				<li>Current Standard Legal Magic Sets.</li>
-				<li>Casual and competitive events.</li>
-				<li>Focus on Draft Format, though we still offer other constructed formats.</li>
-				<li>Quality Draft Beverages including select local craft offerings.</li>
-				<li>Beverages consisting of Beer, Cider, and Seltzers.</li>
-				<li>TV's able to display most on demand events.</li>
-				<li>Menus from local shops should you be hungry.</li>
-			</ul>
-			<h3>The next Saturday Gauntlet Format = Legacy</h3>
 		</main>
 		<footer>
 			<div class="business-hours">

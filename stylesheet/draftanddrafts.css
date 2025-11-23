@@ -2,6 +2,11 @@
 /* ITC2400 - 19967 */
 /* Signature Assignment */
 
+/* Comments */
+/* Your website is not responsive because you do not have any media queries specified in this stylesheet.  
+You must include one or more media queries in order for your site to be responsive.  */
+
+
 /* Global Styles */
 
 h1 { 
@@ -145,6 +150,42 @@ footer ul{
 	margin-left: 25%;
 }
 
+/* Form Styles */
+
+label {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: .85em;
+}
+
+input {
+	width: calc(100% - 25px);
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+select {
+	width: calc(100% - 25px);
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+textarea {
+	width: calc(100% - 25px);
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+	margin-bottom: 10px;
+}
+
 /* Classes */
 
 * {
@@ -211,4 +252,43 @@ footer ul{
 .store-info {
 	float: right;
 	width: 33%;
+}
+
+.form-container {
+	max-width: 600px;
+	margin: auto;
+	background: #FFFFFF;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.required-asterisk {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.about {
+	padding-left: 10%;
+	padding-right: 10%;
+	overflow: auto;
+	display: flex;
+	margin-bottom: 10px;
+}
+
+/* Media Responsiveness */
+
+@media (max-width: 1024px) { 
+	#cardhand {
+		height: 173px;
+		width: 259px;
+	}
+	#playmat {
+		height: 173px;
+		width: 259px;
+	}
+	#drafts {
+		height: 173px;
+		width: 259px;
+	}
 }
